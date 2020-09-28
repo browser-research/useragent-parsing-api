@@ -1,0 +1,9 @@
+[Unit]
+Description="Service Name"
+After=network.target
+[Service]
+User=root
+WorkingDirectory=/home/domain/www
+ExecStart=/usr/bin/node index.js
+[Install]
+WantedBy=multi-user.target
